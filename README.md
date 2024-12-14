@@ -58,3 +58,5 @@ Nota-se que, apesar de não ser sempre perfeito, o algoritmo evolutivo foi capaz
 Explicação problema da mochila: https://noic.com.br/materiais-informatica/curso/dp-02/
 
 Problema de onde foram retirados os casos de teste do experimento https://cses.fi/problemset/task/1158
+
+vídeo explicando o trabalho: https://youtu.be/0R8YsNPJe3Y
