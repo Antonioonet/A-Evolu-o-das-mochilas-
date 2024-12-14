@@ -38,12 +38,12 @@ Foi estudado o desempenho do algoritmo nos casos de teste 10 e 11 do problema **
 
 ### Resultados
 
-- **Caso de teste 10:**  
-\n  N = 1000 K = 100000
+- **Caso de teste 10:**    
+   N = 1000 K = 100000  
   O algoritmo não conseguiu atingir o resultado ótimo em nenhuma variação dos parâmetros testados. A melhor versão encontrada apresentou uma diferença média de apenas 0,2% em relação à resposta ótima, usando uma população maior (1000) com uma quantidade de gerações média (500) e um elitismo mais seletivo (10%), quando comparada a outras versões do experimento.
 
-- **Caso de teste 11:**
- \n  N = 1000 K = 99999
+- **Caso de teste 11:**  
+   N = 1000 K = 99999  
   Esse foi um caso de teste em que diversas versões encontraram a resposta ótima, principalmente quando a população era maior (1000). Em versões com população menor (100), algumas execuções conseguiam chegar à resposta ótima em poucas gerações, enquanto outras não conseguiam atingir a resposta ótima mesmo após 1000 gerações, diferindo em apenas 1 ponto no resultado.  
   Para resolver esse problema, foi aplicada a política do genocídio: eliminar completamente a população atual e introduzir uma nova população aleatória caso não houvesse uma melhora significativa na resposta em 50 gerações. Com o genocídio, a grande maioria das execuções conseguiu chegar à resposta ótima.  
   Em uma leve variação, o melhor indivíduo da geração anterior fazia o crossover com alguns indivíduos da nova geração. Nessa variação, a resposta ótima era encontrada com uma quantidade ligeiramente menor de genocídios, em média.
